@@ -9,8 +9,7 @@ RUN yum install -y \
     supervisor
 RUN yum clean all
 
-RUN curl -O -k -L https://releases.liferay.com/portal/7.2.0-ga1/liferay-ce-portal-tomcat-7.2.0-ga1-20190531153709761.7z \
- && 7za x -o/opt liferay-ce-portal-tomcat-7.2.0-ga1-20190531153709761.7z \
+RUN 7za x -o/opt liferay-ce-portal-tomcat-7.2.0-ga1-20190531153709761.7z \
  && rm liferay-ce-portal-tomcat-7.2.0-ga1-20190531153709761.7z
 RUN ln -s /opt/liferay-ce-portal-7.2.0-ga1 /opt/liferay \
  && ln -s /opt/liferay/tomcat-9.0.17 /opt/liferay/tomcat
