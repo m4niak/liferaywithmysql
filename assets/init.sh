@@ -4,7 +4,7 @@ LIFERAY_HOME=/opt/liferay
 CATALINA_HOME=$LIFERAY_HOME/tomcat
 PROPS_FILE=$LIFERAY_HOME/portal-ext.properties
 
-DB_KIND=${DB_KIND:-hypersonic}
+DB_KIND=${DB_KIND:-mysql}
 DB_NAME=${DB_NAME:-lportal}
 DB_HOST=${DB_HOST:-localhost}
 if [ -n "$DB_PORT" ]; then
